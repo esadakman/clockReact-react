@@ -27,7 +27,9 @@ function Clock() {
     <div className="container">
       <div className="hourContainer">
         <div className="ticTock">
-          <span>{(timer / 10) % 100}</span>
+          <span>{("0" + Math.floor((timer / 60000) % 60)).slice(-2)}</span>
+          <span>{("0" + Math.floor((timer / 1000) % 60)).slice(-2)}</span>
+          <span>{("0" + ((timer / 10) % 100)).slice(-2)}</span>
         </div>
         <div className="buttons">
           <FontAwesomeIcon

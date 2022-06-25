@@ -47,6 +47,15 @@ body {
 .ticTock {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticTock span {
+    text-align: center;
+    width: 10rem;
+    border: 2px red solid;
+
 }
 
 
