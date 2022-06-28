@@ -1,4 +1,3 @@
 # stopWatch-react
 
-
-https://roaring-fudge-408951.netlify.app/
+https://react-stopwatchh.netlify.app/
