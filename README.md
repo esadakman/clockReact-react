@@ -6,7 +6,7 @@
 
 ## Description
 
-- For understanding useState hooks and components i made a simple StopWatch app. It has only three features which is play, pause and reset.
+- For understanding useState hooks and components i made a simple StopWatch app. It has only three features which are play, pause and reset.
 
 ## Project Link
 
