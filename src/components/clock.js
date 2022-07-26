@@ -3,6 +3,7 @@ import "./clock.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
+import { faStop } from "@fortawesome/free-solid-svg-icons";
 
 // let watcher = ;
 
@@ -23,8 +24,17 @@ function Clock() {
     return () => clearInterval(interval);
   }, [play]);
 
+  const resetter = () => {
+    if (!play) {
+      setTimer(0);
+    } else {
+      alert("Please stop clock before resetting");
+    }
+  };
+
   return (
     <div className="container">
+      <div className="title">Stop Watch</div>
       <div className="hourContainer">
         <div className="ticTock">
           <span>{("0" + Math.floor((timer / 60000) % 60)).slice(-2)}</span>
@@ -32,14 +42,23 @@ function Clock() {
           <span>{("0" + ((timer / 10) % 100)).slice(-2)}</span>
         </div>
         <div className="buttons">
-          <FontAwesomeIcon
-            onClick={() => setPlay(true)}
-            icon={faPlay}
-          ></FontAwesomeIcon>
-          <FontAwesomeIcon
-            onClick={() => setPlay(false)}
-            icon={faPause}
-          ></FontAwesomeIcon>
+          <div className="playPause">
+            {!play && (
+              <FontAwesomeIcon
+                onClick={() => setPlay(true)}
+                icon={faPlay}
+              ></FontAwesomeIcon>
+            )}
+            {play && (
+              <FontAwesomeIcon
+                onClick={() => setPlay(false)}
+                icon={faPause}
+              ></FontAwesomeIcon>
+            )}
+          </div>
+          <div className="resetBtn">
+            <FontAwesomeIcon onClick={resetter} icon={faStop}></FontAwesomeIcon>
+          </div>
         </div>
         {/* <FontAwesomeIcon icon="fa-solid fa-play" /> */}
       </div>

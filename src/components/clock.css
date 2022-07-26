@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .hourContainer {
@@ -38,10 +38,50 @@ body {
     align-items: center;
     font-family: Digital;
     color: lightblue;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     font-size: 8rem;
     width: 40rem;
     animation: neon 20s linear infinite;
+}
+
+.title {
+    /* padding: 2rem; */
+    font-family: Digital;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    /* color: rgb(54, 231, 231); */
+    animation: neon 20s linear infinite;
+
+}
+
+.buttons {
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: space-between;
+    /* width: ; */
+    cursor: pointer;
+    margin-top: 1rem;
+
+
+}
+
+.playPause {
+    border: 1px rgb(29, 238, 220) solid;
+    transition: all .5s linear;
+    width: 6rem;
+    padding: .5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.resetBtn {
+    width: 6rem;
+    text-align: center;
+    /* border: 2px red solid; */
+    font-size: 5rem;
+    border: 1px rgb(29, 238, 220) solid;
+
+
 }
 
 .ticTock {
@@ -49,14 +89,16 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .ticTock span {
     text-align: center;
     width: 10rem;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 
 }
+
 
 
 @keyframes neon {
