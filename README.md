@@ -55,4 +55,4 @@ $ npm start / yarn start
 
 ### Preview of the Project
 
-![stopWatch](https://user-images.githubusercontent.com/98649983/181118968-e5111ed1-697a-41a4-8e38-29fedc780e6c.gif)
+# ![stopWatch](https://user-images.githubusercontent.com/98649983/181118968-e5111ed1-697a-41a4-8e38-29fedc780e6c.gif)
