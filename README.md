@@ -47,7 +47,7 @@ SOLUTION
 - ReactJS
 
 ```
-$ git clone https://github.com/esadakman/stopWatch-react.git
+$ git clone https://github.com/esadakman/reactjs-stop-watch.git
 $ cd stopWatch-react/
 $ npm install / yarn
 $ npm start / yarn start
